@@ -128,9 +128,9 @@ const sendMessage = args => {
 
   console.log("Sending", whatsAppArgs);
 
-  client.messages
-    .create(whatsAppArgs)
-    .then(waMessage => console.log("WhatsApp Sid", waMessage.sid));
+  // client.messages
+  //   .create(whatsAppArgs)
+  //   .then(waMessage => console.log("WhatsApp Sid", waMessage.sid));
 };
 
 /*
