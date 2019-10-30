@@ -66,9 +66,9 @@ define(["postmonger", "jquery"], function(Postmonger, $) {
       {
         tokens: authTokens,
         key: "{{Contact.Key}}",
-        test: "{{Contact.Attribute.Hackathon.['Consent Value']}}",
+        test: '{{Contact.Attribute.Hackathon.["Consent Value"]}}',
         number:
-          "{{Contact.Attribute.['MobileConnect Demographics'].['Mobile Number']}}",
+          '{{Contact.Attribute.["MobileConnect Demographics"].["Mobile Number"]}}',
         messageTemplate: messageTemplate
       }
     ];
