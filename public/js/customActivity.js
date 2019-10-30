@@ -43,6 +43,8 @@ define(["postmonger", "jquery"], function(Postmonger, $) {
       $.each(inArgument, function(key, val) {});
     });
 
+    $("#message-template").val(inArgument.messageTemplate);
+
     connection.trigger("updateButton", {
       button: "next",
       text: "done",
