@@ -39,7 +39,8 @@ const data = [
 exports.json = data.reduce((map, r) => {
   const [key, ...rest] = r;
   const values = rest.reduce((map, v, i) => {
-    return { ...map, [columns[i]]: v };
+    const c = columns[i];
+    return { ...map, [c]: v };
   }, {});
-  return { ...map, [key]: rest };
+  return { ...map, [key]: values };
 }, {});
