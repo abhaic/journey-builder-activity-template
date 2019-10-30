@@ -65,9 +65,10 @@ define(["postmonger", "jquery"], function(Postmonger, $) {
     payload["arguments"].execute.inArguments = [
       {
         tokens: authTokens,
-        key: "{{Contact Key}}",
+        key: "{{Contact.Key}}",
         emailAddress: "{{Email Address}}",
-        number: "{{Call Center Number}}",
+        number:
+          "{{Contact.Attributes.['MobileConnect Subscriptions'].['Mobile Number']}}",
         messageTemplate: messageTemplate
       }
     ];
