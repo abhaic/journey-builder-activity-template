@@ -17,9 +17,9 @@
     "execute": {
       "inArguments": [
         {
-          "key": "{{Contact.Key}}",
-          "sms": "{{Contact.Default.SMS}}",
-          "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}",
+          "key": "{{Contact Key}}",
+          "emailAddress": "{{Email Address}}",
+          "number": "{{Call Center Number}}",
           "messageTemplate": ""
         }
       ],

@@ -117,14 +117,19 @@ const sendMessage = args => {
   const accountSid = process.env.waAccountSid;
   const authToken = process.env.waAuthToken;
 
-  const phoneNumber = "+15703507242"; // args.phoneNumber;
+  const phoneNumber = args.number; // "+15703507242"; // args.phoneNumber;
   const client = twilio(accountSid, authToken);
+
+  const whatsAppArgs = {
+    from: "whatsapp:+14155238886",
+    body: message,
+    to: `whatsapp:${phoneNumber}`
+  };
+
+  console.log("Sending", whatsAppArgs);
+
   client.messages
-    .create({
-      from: "whatsapp:+14155238886",
-      body: message,
-      to: `whatsapp:${phoneNumber}`
-    })
+    .create(whatsAppArgs)
     .then(waMessage => console.log("WhatsApp Sid", waMessage.sid));
 };
 
