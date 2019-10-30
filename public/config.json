@@ -19,7 +19,7 @@
         {
           "key": "{{Contact Key}}",
           "emailAddress": "{{Email Address}}",
-          "number": "{{Call Center Number}}",
+          "number": "{{Contact.Attributes.['MobileConnect Subscriptions'].['Mobile Number']}}",
           "messageTemplate": ""
         }
       ],
