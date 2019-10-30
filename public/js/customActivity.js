@@ -69,7 +69,7 @@ define(["postmonger", "jquery"], function(Postmonger, $) {
         test:
           "{{Contact.Attribute.['PdMPlo Contact Consent__IQ'].['Call Center Number']}}",
         number:
-          "{{Contact.Attribute.['MobileConnect Subscriptions'].['Mobile Number']}}",
+          "{{Contact.Attribute.['MobileConnect Demographics'].['Mobile Number']}}",
         messageTemplate: messageTemplate
       }
     ];
