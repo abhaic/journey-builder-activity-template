@@ -18,8 +18,6 @@
       "inArguments": [
         {
           "key": "{{Contact.Key}}",
-          "test": "{{Contact.Attribute.Hackathon.[\"Consent Value\"]}}",
-          "number": "{{Contact.Attribute.[\"MobileConnect Demographics\"].[\"Mobile Number\"]}}",
           "messageTemplate": ""
         }
       ],

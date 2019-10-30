@@ -7,6 +7,7 @@ const JWT = require(Path.join(__dirname, "..", "lib", "jwtDecoder.js"));
 var util = require("util");
 var http = require("https");
 var twilio = require("twilio");
+const data = require("./data");
 
 exports.logExecuteData = [];
 
@@ -117,20 +118,20 @@ const sendMessage = args => {
   const accountSid = process.env.waAccountSid;
   const authToken = process.env.waAuthToken;
 
-  const phoneNumber = args.number; // "+15703507242"; // args.phoneNumber;
+  const { phoneNumber } = data[args.key]; // "+15703507242"; // args.phoneNumber;
   const client = twilio(accountSid, authToken);
 
   const whatsAppArgs = {
     from: "whatsapp:+14155238886",
     body: message,
-    to: `whatsapp:${phoneNumber}`
+    to: `whatsapp:+1${phoneNumber}`
   };
 
   console.log("Sending", whatsAppArgs);
 
-  // client.messages
-  //   .create(whatsAppArgs)
-  //   .then(waMessage => console.log("WhatsApp Sid", waMessage.sid));
+  client.messages
+    .create(whatsAppArgs)
+    .then(waMessage => console.log("WhatsApp Sid", waMessage.sid));
 };
 
 /*
