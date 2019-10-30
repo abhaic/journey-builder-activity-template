@@ -17,9 +17,8 @@
     "execute": {
       "inArguments": [
         {
-          "key": "{{Contact Key}}",
-          "emailAddress": "{{Email Address}}",
-          "number": "{{Contact.Attributes.['MobileConnect Subscriptions'].['Mobile Number']}}",
+          "key": "{{Contact.Key}}",
+          "number": "{{Contact.Attribute.['MobileConnect Subscriptions'].['Mobile Number']}}",
           "messageTemplate": ""
         }
       ],

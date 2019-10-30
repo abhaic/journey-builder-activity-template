@@ -66,9 +66,8 @@ define(["postmonger", "jquery"], function(Postmonger, $) {
       {
         tokens: authTokens,
         key: "{{Contact.Key}}",
-        emailAddress: "{{Email Address}}",
         number:
-          "{{Contact.Attributes.['MobileConnect Subscriptions'].['Mobile Number']}}",
+          "{{Contact.Attribute.['MobileConnect Subscriptions'].['Mobile Number']}}",
         messageTemplate: messageTemplate
       }
     ];
