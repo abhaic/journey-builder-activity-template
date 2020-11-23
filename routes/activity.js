@@ -124,7 +124,7 @@ const sendMessage = args => {
   const whatsAppArgs = {
     from: "whatsapp:+14155238886",
     body: message,
-    to: `whatsapp:+1${phoneNumber}`
+    to: `whatsapp:+${phoneNumber}`
   };
 
   console.log("Sending", whatsAppArgs);
