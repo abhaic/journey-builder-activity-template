@@ -6,10 +6,10 @@ module.exports = {
     phoneNumber: "17329100468"
   },
   HACK202011212: {
-    firstName: "Demo1",
-    lastName: "Demo1",
-    emailAddress: "Rashi.kapil@outlook.com",
-    phoneNumber: "19736154533"
+    firstName: "George",
+    lastName: "Kletsas",
+    emailAddress: "GKletsas@gr.imshealth.com",
+    phoneNumber: "306980175146"
   },
   HACK202011213: {
     firstName: "Demo2",
